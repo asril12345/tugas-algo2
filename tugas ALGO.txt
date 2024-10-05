@@ -1,0 +1,61 @@
+# Aplikasi penghitungan
+def hitung_kembalian():
+    harga_per_kg = 28000
+    jumlah_telur = float(input("Jumlah Telur(kg): "))
+    total_bayar = float(input("Total Bayar: "))
+    uang_diberikan = float(input("Uang yang diberikan: "))
+
+    total_harga = harga_per_kg * jumlah_telur
+    if total_bayar < total_harga:
+        print("Total bayar kurang dari harga total.")
+        return
+
+        kembalian = uang_diberikan - total_harga
+        print(f"Uang Kembalian: {kembalian:.2f}")
+
+def konversi_suhu():
+    celcius = float(input("masukkan suhu dalam celcius: "))
+    fahrenheit = (celcius * 9/5) + 32
+    print(f"Suhu dalam Fahrenheit: {fahrenheit:.2f}")
+
+def hitung_keliling_lingkaran():
+    jari_jari + float(input("masukkan jari-jari lingkaran: "))
+    keliling = 2 * 3.14 * jari_jari
+    print(f"keliling lingkaran: {keliling:.2f}")
+
+def hitung_luas_persegi_panjang():
+    panjang = float(input("masukkan panjang: "))
+    lebar = float(input("masukkan lebar: "))
+    luas = panjang * lebar
+    print(f"Luas persegi panjang: {luas:.2f}")
+
+def hitung_volume_kubus():
+    sisi = float(input("masukkan panjang sisi kubus: "))
+    volume = sisi ** 3
+    print(f"Volume kubus: {volume:.2f}")
+
+def main():
+    print("Pilih fitur:")
+    print("1. Hitung Kembalian")
+    print("2. Konversi Suhu")
+    print("3. Hitung keliling Lingkaran")
+    print("4. Hitung luas Persegi Panjang")
+    print("5. Hitung Volume Kubus")
+
+    pilihan = int(input("Masukkan pilihan(1-5): "))
+
+    if pilihan == 1:
+        hitung_kembalian()
+    elif pilihan == 2:
+        konversi_suhu()
+    elif pilihan == 3:
+        hitung_keliling_lingkaran
+    elif pilihan == 4:
+        hitung_luas_persegi_panjang()
+    elif pilihan == 5:
+        hitung_volume_kubus()
+    else:
+        print("Pilihan tidak valid.")
+    
+if _name_ == "_main_":
+    main()
